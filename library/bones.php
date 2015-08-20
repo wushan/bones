@@ -153,11 +153,28 @@ function bones_scripts_and_styles() {
 		using the google cdn. That way it stays cached
 		and your site will load faster.
 		*/
-		wp_enqueue_script( 'jquery' );
+
+		// wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'bones-js' );
 
 	}
 }
+
+function optimize_jquery() {
+if (!is_admin()) {
+	wp_deregister_script('jquery');
+	wp_deregister_script('jquery-migrate.min');
+	wp_deregister_script('comment-reply.min');
+	$protocol='http:';
+if($_SERVER['HTTPS']=='on') {
+		$protocol='https:';
+	}
+		wp_register_script('jquery', $protocol.'//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js', false, '3.6', true);
+
+		wp_enqueue_script('jquery');
+	}
+}
+add_action('template_redirect', 'optimize_jquery');
 
 /*********************
 THEME SUPPORT
