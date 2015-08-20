@@ -27,8 +27,9 @@
 		</div>
 
 		<?php // all js scripts are loaded in library/bones.php ?>
+		
 		<?php wp_footer(); ?>
-
+		<script src="http://127.0.0.1:35729/livereload.js?snipver=1"></script>
 	</body>
 
 </html> <!-- end of site. what a ride! -->

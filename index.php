@@ -9,9 +9,9 @@
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
-
+							<?php the_post_thumbnail('full') ?>
 								<header class="article-header">
-
+								ewfewfwefr
 									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 									<p class="entry-meta">
                       <?php printf( __( 'Posted', 'bonestheme' ).' %1$s %2$s',
@@ -25,7 +25,7 @@
 								</header>
 
 								<section class="entry-content">
-									<?php the_content(); ?>
+									<?php the_excerpt(); ?>
 									
 								</section>
 
