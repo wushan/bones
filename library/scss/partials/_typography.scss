@@ -50,8 +50,8 @@ I've edited it a bit, but it's a nice starting point.
 
 // font stacks
 $sans-serif:        "proxima-nova","Helvetica Neue", Helvetica, Arial,"source-han-sans-traditional", sans-serif;
-$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
-
+$serif:             "freight-text-pro", "Georgia", Cambria, Times New Roman, Times, "source-han-sans-traditional", serif;
+//Fallback chinese to Sans-serif
 /*
  i imported this one in the functions file so bones would look sweet.
  don't forget to remove it for your site.

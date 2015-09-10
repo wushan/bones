@@ -141,7 +141,7 @@ really slow down your CSS. Don't overdo it.
 *********************/ /* @include css-gradient(#dfdfdf,#f8f8f8); */ /*********************
 BOX SIZING
 *********************/ /* @include box-sizing(border-box); */ /* NOTE: value of "padding-box" is only supported in Gecko. So
-probably best not to use it. I mean, were you going to anyway? */ width: 731px; font-family: "Lato", "proxima-nova", "Helvetica Neue", Helvetica, Arial, "source-han-sans-traditional", sans-serif; font-size: 100%; line-height: 1.5; color: #777777; -webkit-font-smoothing: antialiased;   /*********************
+probably best not to use it. I mean, were you going to anyway? */ width: 731px; font-family: "Lato", "proxima-nova", "Helvetica Neue", Helvetica, Arial, "source-han-sans-traditional", sans-serif; font-size: 100%; line-height: 1.5; color: #000000; -webkit-font-smoothing: antialiased;   /*********************
 	LINK STYLES
 	*********************/ /******************************************************************
 H1, H2, H3, H4, H5 STYLES
@@ -214,19 +214,19 @@ body#tinymce.wp-editor h3, body#tinymce.wp-editor .h3 { font-size: 1.125em; }
 body#tinymce.wp-editor h4, body#tinymce.wp-editor .h4 { font-size: 1.1em; font-weight: 700; }
 body#tinymce.wp-editor h5, body#tinymce.wp-editor .h5 { font-size: 0.846em; line-height: 2.09em; text-transform: uppercase; letter-spacing: 2px; }
 body#tinymce.wp-editor p { margin: 0 0 1.5em; }
-body#tinymce.wp-editor table { width: 100%; border: 1px solid #eaedf2; margin-bottom: 1.5em; }
+body#tinymce.wp-editor table { width: 100%; border: 1px solid #dddddd; margin-bottom: 1.5em; }
 body#tinymce.wp-editor table caption { margin: 0 0 7px; font-size: 0.75em; color: #9fa6b4; text-transform: uppercase; letter-spacing: 1px; }
-body#tinymce.wp-editor tr { border-bottom: 1px solid #eaedf2; }
-body#tinymce.wp-editor tr:nth-child(even) { background-color: #f8f9fa; }
-body#tinymce.wp-editor td { padding: 7px; border-right: 1px solid #eaedf2; }
+body#tinymce.wp-editor tr { border-bottom: 1px solid #dddddd; }
+body#tinymce.wp-editor tr:nth-child(even) { background-color: #f7f7f7; }
+body#tinymce.wp-editor td { padding: 7px; border-right: 1px solid #dddddd; }
 body#tinymce.wp-editor td:last-child { border-right: 0; }
-body#tinymce.wp-editor th { background-color: #f8f9fa; border-bottom: 1px solid #eaedf2; border-right: 1px solid #eaedf2; }
+body#tinymce.wp-editor th { background-color: #f7f7f7; border-bottom: 1px solid #dddddd; border-right: 1px solid #dddddd; }
 body#tinymce.wp-editor th:last-child { border-right: 0; }
 body#tinymce.wp-editor blockquote { margin: 0 0 1.5em 0.75em; padding: 0 0 0 0.75em; border-left: 3px solid #2980b9; font-style: italic; color: #9fa6b4; }
 body#tinymce.wp-editor dd { margin-left: 0; font-size: 0.9em; color: #787878; margin-bottom: 1.5em; }
 body#tinymce.wp-editor img { margin: 0 0 1.5em 0; max-width: 100%; height: auto; }
 body#tinymce.wp-editor .size-auto, body#tinymce.wp-editor .size-full, body#tinymce.wp-editor .size-large, body#tinymce.wp-editor .size-medium, body#tinymce.wp-editor .size-thumbnail { max-width: 100%; height: auto; }
-body#tinymce.wp-editor pre { background: #000000; color: #f8f9fa; font-size: 0.9em; padding: 1.5em; margin: 0 0 1.5em; border-radius: 3px; }
+body#tinymce.wp-editor pre { background: #000000; color: #f7f7f7; font-size: 0.9em; padding: 1.5em; margin: 0 0 1.5em; border-radius: 3px; }
 @media only screen and (min-width: 481px) { body#tinymce.wp-editor { /* at this larger size, we can start to align images */ }
   body#tinymce.wp-editor .alignleft, body#tinymce.wp-editor img.alignleft { margin-right: 1.5em; display: inline; float: left; }
   body#tinymce.wp-editor .alignright, body#tinymce.wp-editor img.alignright { margin-left: 1.5em; display: inline; float: right; }
