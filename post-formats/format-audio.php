@@ -1,6 +1,6 @@
 
 
-              <article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemtype="http://schema.org/AudioObject">
+              <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article" itemscope itemtype="http://schema.org/AudioObject">
 
                 <header class="article-header">
 
@@ -48,6 +48,6 @@
 
                 </footer> <?php // end article footer ?>
 
-                <?php //comments_template(); ?>
+                <?php comments_template(); ?>
 
               </article> <?php // end article ?>

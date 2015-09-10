@@ -15,32 +15,47 @@ Helpful articles on Sass file organization:
 http://thesassway.com/advanced/modular-css-naming-conventions
 
 ******************************************************************/
+//Compass
+  @import "compass/css3/background-size";
+  @import "compass/css3/transition";
+  @import "compass/css3/transform";
+  @import "compass/utilities/general/reset";
+  @import "compass/css3/box-shadow";
+  @import "compass/css3/border-radius";
+  @import "compass/css3/box-sizing";
+  @import "compass/css3/opacity";
+  @import "compass/css3/filter";
+  @import "compass/css3/images";
+
+  //Mixin
+  @import "mixin/retina-background-image";
+  @import "mixin/retina-sprites";
+
+  //Susy + BreakPoint
+  @import "susy";
+  @import "breakpoint";
 
 // normalize: http://necolas.github.io/normalize.css/
-@import "partials/normalize";
+@import "components/normalize";
 // Sass variables
-@import "partials/variables";
+@import "components/variables";
 // typography
-@import "partials/typography";
-// Sass functions
-@import "partials/functions";
+@import "components/typography";
+// Sass functions //Not in Use
+// @import "components/functions";
 // import mixins
-@import "partials/mixins";
+@import "components/mixins";
 
-/*********************
-IMPORTING MODULES
-Modules are reusable blocks or elements we use throughout the project.
-We can break them up as much as we want or just keep them all in one.
-I mean, you can do whatever you want. The world is your oyster. Unless
-you hate oysters, then the world is your peanut butter & jelly sandwich.
-*********************/
+@import "components/grid";
 
+// Components
+@import "components/components";
 // alert boxes
-@import "modules/alerts";
+@import "components/alerts";
 // buttons
-@import "modules/buttons";
+@import "components/buttons";
 // forms (inputs & labels)
-@import "modules/forms";
+@import "components/forms";
 
 /*********************
 BASE (MOBILE) SIZE
@@ -50,7 +65,11 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 *********************/
 
 // styles in base.scss
-@import "pages/base";
+@import "base";
+@import "nav";
+@import "main";
+@import "comments";
+@import "sidebar";
 
 /*********************
 PRINT STYLESHEET
